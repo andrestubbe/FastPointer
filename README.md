@@ -75,8 +75,8 @@ public class Demo {
 
 ## Installation
 
-### Maven (via JitPack)
-Add JitPack to your `pom.xml`:
+### Option 1: Maven (Recommended)
+Add the JitPack repository and the mandatory `FastCore` dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -87,13 +87,39 @@ Add JitPack to your `pom.xml`:
 </repositories>
 
 <dependencies>
+    <!-- FastPointer Library -->
     <dependency>
         <groupId>com.github.andrestubbe</groupId>
         <artifactId>FastPointer</artifactId>
         <version>0.1.0</version>
     </dependency>
+
+    <!-- FastCore (Mandatory Native Loader) -->
+    <dependency>
+        <groupId>com.github.andrestubbe</groupId>
+        <artifactId>FastCore</artifactId>
+        <version>0.1.0</version>
+    </dependency>
 </dependencies>
 ```
+
+### Option 2: Gradle (via JitPack)
+```groovy
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.andrestubbe:FastPointer:0.1.0'
+    implementation 'com.github.andrestubbe:FastCore:0.1.0'
+}
+```
+
+### Option 3: Direct Download (No Build Tool)
+Download the latest JARs directly to add them to your classpath:
+
+1. 📦 **[fastpointer-0.1.0.jar](https://github.com/andrestubbe/FastPointer/releases/download/0.1.0/fastpointer-0.1.0.jar)** (The Core Library)
+2. ⚙️ **[fastcore-0.1.0.jar](https://github.com/andrestubbe/FastCore/releases/download/0.1.0/fastcore-0.1.0.jar)** (The Mandatory Native Loader)
 
 ---
 
