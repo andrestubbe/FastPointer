@@ -11,7 +11,7 @@ public final class FastPointerNative {
 
     static {
         try {
-            FastCore.load("FastPointer");
+            FastCore.loadLibrary("FastPointer", FastPointerNative.class);
             loaded = true;
         } catch (Throwable t) {
             // Fallback to Unsafe pure Java mode if native DLL is not loaded
