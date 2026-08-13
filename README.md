@@ -12,6 +12,8 @@
 
 `FastPointer` provides a lightweight bridge between Java and native memory. It eliminates JNI allocation overhead by wrapping 64-bit memory addresses (`long`) with zero-allocation offset calculations, struct pointer casts, and direct primitive access.
 
+[![Showcase](docs/screenshot.png)](examples/Demo.java)
+
 ---
 
 ## Table of Contents
