@@ -1,0 +1,29 @@
+TITLE:
+FastPointer: Ultra-Fast Native Address Arithmetic for Java 🚀
+
+DESCRIPTION:
+Demonstrating FastPointer, a zero-allocation primitive address abstraction for Java. It enables 64-bit native pointer arithmetic, direct memory dereferencing via Unsafe, and zero-copy data manipulation without heap allocation or GC pauses.
+
+TECHNICAL HIGHLIGHTS:
+- Primitive Long Wrapper: High-speed native address representation using 64-bit primitive values.
+- Direct Memory Access: Ultra-fast Unsafe getters/setters for byte, int, float, and double types.
+- Zero Allocation: Perform offset calculations and pointer shifts without creating Java objects.
+- JNI Interoperability: Seamless bridge to C++ native code via FastCore.
+
+RESULTS:
+- Pointer Offset Math: 0 ns overhead (direct scalar arithmetic)
+- Memory Access: Matches C++ raw memory dereferencing performance
+
+FASTJAVA SYSTEM REPOSITORIES:
+1. FastPointer: https://github.com/andrestubbe/FastPointer
+2. FastMemory: https://github.com/andrestubbe/FastMemory
+3. FastSIMD: https://github.com/andrestubbe/FastSIMD
+4. FastSharedMemory: https://github.com/andrestubbe/FastSharedMemory
+
+Ecosystem Overview: https://github.com/andrestubbe/FastJava
+
+Part of the FastJava Ecosystem — Making the JVM faster.
+Made with ⚡ by Andre Stubbe
+
+TAGS:
+Java, FastJava, FastPointer, JNI, Unsafe, Native Memory, Memory Management, C++, Systems Programming
