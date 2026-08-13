@@ -1,0 +1,2 @@
+JMH S 33 fastpointer.benchmark.JMH_Pointer S 77 fastpointer.benchmark.jmh_generated.JMH_Pointer_testFastPointerOffset_jmhTest S 21 testFastPointerOffset S 10 Throughput E A 1 1 1 E I 1 2 T 3 1 s E I 1 3 T 3 1 s E I 1 1 E E E E E E U 7 SECONDS E E 
+JMH S 33 fastpointer.benchmark.JMH_Pointer S 76 fastpointer.benchmark.jmh_generated.JMH_Pointer_testRawAddressOffset_jmhTest S 20 testRawAddressOffset S 10 Throughput E A 1 1 1 E I 1 2 T 3 1 s E I 1 3 T 3 1 s E I 1 1 E E E E E E U 7 SECONDS E E 
