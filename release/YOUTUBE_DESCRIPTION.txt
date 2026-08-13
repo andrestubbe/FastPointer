@@ -1,20 +1,22 @@
 TITLE:
-FastPointer: Ultra-Fast Native Address Arithmetic for Java 🚀
+FastPointer: Zero-Overhead Native Memory vs Java Heap Performance 🚀
 
 DESCRIPTION:
-Demonstrating FastPointer, a zero-allocation primitive address abstraction for Java. It enables 64-bit native pointer arithmetic, direct memory dereferencing via Unsafe, and zero-copy data manipulation without heap allocation or GC pauses.
+Demonstrating FastPointer, a zero-allocation native memory abstraction for Java. This performance comparison shows 1,000,000 messages processed via native off-heap memory versus traditional Java heap objects, highlighting zero GC pressure and direct memory access benefits.
 
 TECHNICAL HIGHLIGHTS:
-- Primitive Long Wrapper: High-speed native address representation using 64-bit primitive values.
-- Direct Memory Access: Ultra-fast Unsafe getters/setters for byte, int, float, and double types.
-- Zero Allocation: Perform offset calculations and pointer shifts without creating Java objects.
-- JNI Interoperability: Seamless bridge to C++ native code via FastCore.
+- Zero-Allocation Arithmetic: 64-bit native pointer operations without intermediate Java objects
+- Direct Memory Access: Unsafe-based primitive getters/setters for byte, int, float, double
+- Off-Heap Memory: Native memory allocation eliminates GC pressure completely
+- Real-World Benchmark: 1M message buffer test with timing and memory measurements
 
 RESULTS:
-- Pointer Offset Math: 0 ns overhead (direct scalar arithmetic)
-- Memory Access: Matches C++ raw memory dereferencing performance
+- Write Speedup: 1.5x faster than Java heap objects (35ms vs 54ms)
+- Read Speedup: 1.2x faster than Java heap objects (11ms vs 13ms)
+- Memory Saved: 22.9 MB reduced memory footprint
+- GC Pressure: Native = NONE | Heap = HIGH
 
-FASTJAVA SYSTEM REPOSITORIES:
+FASTJAVA CORE REPOSITORIES:
 1. FastPointer: https://github.com/andrestubbe/FastPointer
 2. FastMemory: https://github.com/andrestubbe/FastMemory
 3. FastSIMD: https://github.com/andrestubbe/FastSIMD
@@ -26,4 +28,4 @@ Part of the FastJava Ecosystem — Making the JVM faster.
 Made with ⚡ by Andre Stubbe
 
 TAGS:
-Java, FastJava, FastPointer, JNI, Unsafe, Native Memory, Memory Management, C++, Systems Programming
+Java, FastJava, FastPointer, Native Memory, Performance Benchmark, GC Optimization, Memory Management, C++, JNI, Unsafe
