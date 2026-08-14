@@ -44,6 +44,7 @@ public class Demo {
 ## Table of Contents
 
 - [Key Features](#key-features)
+- [Real-World Use Cases](#real-world-use-cases)
 - [Quick Start](#quick-start)
 - [API Reference](#api-reference)
 - [Installation](#installation)
@@ -59,6 +60,14 @@ public class Demo {
 - **📦 Zero GC Overhead**: Eliminates intermediate Java wrapper objects during high-frequency loops.
 - **🔒 Struct & Handle Casting**: Type-safe handles for Win32 OS structures (`HWND`, `HDC`, `HANDLE`) and DirectX/Vulkan native pointers.
 - **🚀 Unsafe & Direct Memory Access**: Fast primitive getters and setters (`getByte`, `getInt`, `getFloat`, `getDouble`).
+
+---
+
+## Real-World Use Cases
+
+- ⚡ **Zero-Overhead Struct Navigation**: Traverse complex C++ native structs and GPU memory layouts directly via 64-bit address arithmetic.
+- 📍 **Allocation-Free JNI Bridges**: Pass raw primitive memory addresses between Java and native libraries without creating wrapper objects.
+- 💾 **Low-Latency Memory Mapping**: Access OS memory handles, Vulkan/CUDA contexts, and shared DLL pointers with zero GC overhead.
 
 ---
 
