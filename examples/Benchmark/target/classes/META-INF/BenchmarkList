@@ -1,0 +1,2 @@
+JMH S 33 fastpointer.benchmark.JMH_Pointer S 83 fastpointer.benchmark.jmh_generated.JMH_Pointer_testPointerOffsetArithmetic_jmhTest S 27 testPointerOffsetArithmetic S 10 Throughput E A 1 1 1 E I 1 2 T 3 1 s E I 1 3 T 3 1 s E I 1 1 E E E E E E U 12 MILLISECONDS E E 
+JMH S 33 fastpointer.benchmark.JMH_Pointer S 80 fastpointer.benchmark.jmh_generated.JMH_Pointer_testPrimitiveAddressRead_jmhTest S 24 testPrimitiveAddressRead S 10 Throughput E A 1 1 1 E I 1 2 T 3 1 s E I 1 3 T 3 1 s E I 1 1 E E E E E E U 12 MILLISECONDS E E 

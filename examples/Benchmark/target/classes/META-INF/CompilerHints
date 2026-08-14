@@ -1,0 +1,8 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+inline,fastpointer/benchmark/JMH_Pointer.setup
+inline,fastpointer/benchmark/JMH_Pointer.testPointerOffsetArithmetic
+inline,fastpointer/benchmark/JMH_Pointer.testPrimitiveAddressRead
