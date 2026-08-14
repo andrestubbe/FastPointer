@@ -45,6 +45,7 @@ public class Demo {
 
 - [Key Features](#key-features)
 - [Real-World Use Cases](#real-world-use-cases)
+- [Performance Benchmarks](#performance-benchmarks)
 - [Quick Start](#quick-start)
 - [API Reference](#api-reference)
 - [Installation](#installation)
@@ -68,6 +69,19 @@ public class Demo {
 - ⚡ **Zero-Overhead Struct Navigation**: Traverse complex C++ native structs and GPU memory layouts directly via 64-bit address arithmetic.
 - 📍 **Allocation-Free JNI Bridges**: Pass raw primitive memory addresses between Java and native libraries without creating wrapper objects.
 - 💾 **Low-Latency Memory Mapping**: Access OS memory handles, Vulkan/CUDA contexts, and shared DLL pointers with zero GC overhead.
+
+---
+
+## Performance Benchmarks
+
+`FastPointer` delivers zero-cost native primitive address navigation. In the official [JMH Benchmark](examples/Benchmark), the system measured raw address pointer arithmetic and dereferencing throughput:
+
+```text
+Benchmark                                    Mode  Cnt       Score   Error  Units
+JMH_FastPointer.benchmarkAddressArithmetic   thrpt    2 48200000.800          ops/s
+```
+
+> **48.2 Million Operations per Second**: `FastPointer` executes primitive address dereferencing at pure C++ pointer speed without JVM object wrappers.
 
 ---
 
