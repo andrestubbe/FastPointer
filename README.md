@@ -43,6 +43,7 @@ public class Demo {
 
 ## Table of Contents
 
+- [Why FastPointer?](#why-fastpointer)
 - [Key Features](#key-features)
 - [Real-World Use Cases](#real-world-use-cases)
 - [Performance Benchmarks](#performance-benchmarks)
@@ -52,6 +53,16 @@ public class Demo {
 - [Documentation](#documentation)
 - [Platform Support](#platform-support)
 - [License](#license)
+
+---
+
+## Why FastPointer?
+
+Standard Java interop mechanisms (`sun.misc.Unsafe` or Java 22 `Foreign Function & Memory API`) either require verbose boilerplate or create GC pressure through object wrappers (`MemorySegment`) when performing high-frequency native memory operations. `FastPointer` provides:
+
+- **Zero-Allocation Memory Arithmetic** — Perform offset calculations, pointer casting, and struct navigation on primitive `long` addresses without creating intermediate Java objects.
+- **Microsecond JNI Bridge** — Eliminate object wrapper allocations when passing C++ handles, DirectX/Vulkan pointers, and OS memory buffers between Java and native DLLs.
+- **C++ Pointer Performance in Java** — Achieve raw native execution speed (48+ Million ops/sec) for real-time graphics, automation bots, and high-frequency trading.
 
 ---
 
