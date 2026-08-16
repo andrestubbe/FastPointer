@@ -49,6 +49,7 @@ public class Demo {
 - [Performance Benchmarks](#performance-benchmarks)
 - [Quick Start](#quick-start)
 - [API Reference](#api-reference)
+- [FastJava Native Memory Substrate](#fastjava-native-memory--hardware-substrate)
 - [Installation](#installation)
 - [Documentation](#documentation)
 - [Platform Support](#platform-support)
@@ -107,8 +108,18 @@ JMH_FastPointer.benchmarkAddressArithmetic   thrpt    2 48200000.800          op
 ### Primitive Operations
 - `getByte(long offset)` / `setByte(long offset, byte value)`
 - `getInt(long offset)` / `setInt(long offset, int value)`
-- `getFloat(long offset)` / `setFloat(long offset, float value)`
-- `getDouble(long offset)` / `setDouble(long offset, double value)`
+---
+
+## FastJava Native Memory & Hardware Substrate
+
+`FastPointer` is part of the core **FastJava Low-Level Native Memory Substrate**, designed to grant Java applications raw C++ speed and direct hardware access:
+
+| Substrate Module | Role & Key Capability |
+| :--- | :--- |
+| **`FastPointer`** | **64-Bit Native Pointer Abstraction** — Zero-allocation address arithmetic, handle casting (`HWND`, `HANDLE`), and off-heap struct navigation. |
+| **`FastMemory`** | **Off-Heap Direct Allocator** — High-speed aligned off-heap memory management with zero Garbage Collector pressure. |
+| **`FastSIMD`** | **AVX2 / Vector Acceleration** — 256-bit SIMD hardware vectorization for memory scanning, math operations, and array sweeps. |
+| **`FastSharedMemory`** | **Zero-Copy IPC Substrate** — Ultra-fast inter-process shared memory buffers between Java processes and native C++ services. |
 
 ---
 
