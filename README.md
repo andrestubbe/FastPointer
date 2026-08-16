@@ -116,10 +116,10 @@ JMH_FastPointer.benchmarkAddressArithmetic   thrpt    2 48200000.800          op
 
 | Substrate Module | Role & Key Capability |
 | :--- | :--- |
-| **`FastPointer`** | **64-Bit Native Pointer Abstraction** — Zero-allocation address arithmetic, handle casting (`HWND`, `HANDLE`), and off-heap struct navigation. |
-| **`FastMemory`** | **Off-Heap Direct Allocator** — High-speed aligned off-heap memory management with zero Garbage Collector pressure. |
-| **`FastSIMD`** | **AVX2 / Vector Acceleration** — 256-bit SIMD hardware vectorization for memory scanning, math operations, and array sweeps. |
-| **`FastSharedMemory`** | **Zero-Copy IPC Substrate** — Ultra-fast inter-process shared memory buffers between Java processes and native C++ services. |
+| **[`FastPointer`](https://github.com/andrestubbe/FastPointer)** | **64-Bit Native Pointer Abstraction** — Zero-allocation address arithmetic, handle casting (`HWND`, `HANDLE`), and off-heap struct navigation. |
+| **[`FastMemory`](https://github.com/andrestubbe/FastMemory)** | **Off-Heap Direct Allocator** — High-speed aligned off-heap memory management with zero Garbage Collector pressure. |
+| **[`FastSIMD`](https://github.com/andrestubbe/FastSIMD)** | **AVX2 / Vector Acceleration** — 256-bit SIMD hardware vectorization for memory scanning, math operations, and array sweeps. |
+| **[`FastSharedMemory`](https://github.com/andrestubbe/FastSharedMemory)** | **Zero-Copy IPC Substrate** — Ultra-fast inter-process shared memory buffers between Java processes and native C++ services. |
 
 ---
 
