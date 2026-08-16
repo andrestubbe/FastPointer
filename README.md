@@ -97,19 +97,6 @@ JMH_FastPointer.benchmarkAddressArithmetic   thrpt    2 48200000.800          op
 
 ---
 
-## API Reference
-
-### `Pointer`
-- `Pointer.of(long address)`: Creates a pointer wrapper for a raw 64-bit memory address.
-- `offset(long bytes)`: Calculates a new offset address.
-- `address()`: Returns the underlying primitive 64-bit `long` address.
-- `isNull()`: Returns `true` if the address is `0x0`.
-
-### Primitive Operations
-- `getByte(long offset)` / `setByte(long offset, byte value)`
-- `getInt(long offset)` / `setInt(long offset, int value)`
----
-
 ## FastJava Native Memory & Hardware Substrate
 
 `FastPointer` is part of the core **FastJava Low-Level Native Memory Substrate**, designed to grant Java applications raw C++ speed and direct hardware access:
@@ -121,6 +108,19 @@ JMH_FastPointer.benchmarkAddressArithmetic   thrpt    2 48200000.800          op
 | **[`FastSIMD`](https://github.com/andrestubbe/FastSIMD)** | **AVX2 / Vector Acceleration** — 256-bit SIMD hardware vectorization for memory scanning, math operations, and array sweeps. |
 | **[`FastSharedMemory`](https://github.com/andrestubbe/FastSharedMemory)** | **Zero-Copy IPC Substrate** — Ultra-fast inter-process shared memory buffers between Java processes and native C++ services. |
 
+---
+
+## API Reference
+
+### `Pointer`
+- `Pointer.of(long address)`: Creates a pointer wrapper for a raw 64-bit memory address.
+- `offset(long bytes)`: Calculates a new offset address.
+- `address()`: Returns the underlying primitive 64-bit `long` address.
+- `isNull()`: Returns `true` if the address is `0x0`.
+
+### Primitive Operations
+- `getByte(long offset)` / `setByte(long offset, byte value)`
+- `getInt(long offset)` / `setInt(long offset, int value)`
 ---
 
 ## Installation
