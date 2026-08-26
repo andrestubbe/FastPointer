@@ -39,8 +39,6 @@ public class Demo {
 
 ---
 
----
-
 ## Table of Contents
 
 - [Why FastPointer?](#why-fastpointer)
