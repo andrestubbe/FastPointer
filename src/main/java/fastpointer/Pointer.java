@@ -72,6 +72,14 @@ public final class Pointer {
         UNSAFE.putByte(address + offset, value);
     }
 
+    public short getShort(long offset) {
+        return UNSAFE.getShort(address + offset);
+    }
+
+    public void setShort(long offset, short value) {
+        UNSAFE.putShort(address + offset, value);
+    }
+
     public int getInt(long offset) {
         return UNSAFE.getInt(address + offset);
     }
