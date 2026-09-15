@@ -42,11 +42,11 @@ public class Demo {
 ## Table of Contents
 
 - [Why FastPointer?](#why-fastpointer)
+- [Quick Start](#quick-start)
 - [Key Features](#key-features)
 - [Real-World Use Cases](#real-world-use-cases)
 - [Performance Benchmarks](#performance-benchmarks)
-- [Quick Start](#quick-start)
-- [API Reference](#api-reference)
+- [API Quick Reference](#api-quick-reference)
 - [FastJava Native Memory Substrate](#fastjava-native-memory--hardware-substrate)
 - [Installation](#installation)
 - [Documentation](#documentation)
@@ -108,17 +108,22 @@ JMH_FastPointer.benchmarkAddressArithmetic   thrpt    2 48200000.800          op
 
 ---
 
-## API Reference
+## API Quick Reference
 
-### `Pointer`
-- `Pointer.of(long address)`: Creates a pointer wrapper for a raw 64-bit memory address.
-- `offset(long bytes)`: Calculates a new offset address.
-- `address()`: Returns the underlying primitive 64-bit `long` address.
-- `isNull()`: Returns `true` if the address is `0x0`.
+| Method | Description | Docs |
+|---|---|---|
+| `Pointer.of(long address)` | Wraps a raw 64-bit primitive memory address. | [Reference](docs/REFERENCE.md) |
+| `Pointer.nullPointer()` | Returns the cached null pointer singleton (`0x0`). | [Reference](docs/REFERENCE.md) |
+| `address()` | Returns the underlying primitive 64-bit `long` address. | [Reference](docs/REFERENCE.md) |
+| `isNull()` | Returns `true` if the underlying address is `0x0`. | [Reference](docs/REFERENCE.md) |
+| `offset(long bytes)` / `add(long bytes)` | Returns a new `Pointer` shifted by the given byte offset. | [Reference](docs/REFERENCE.md) |
+| `getByte(offset)` / `setByte(offset, val)` | Direct off-heap 8-bit integer read/write without GC overhead. | [Reference](docs/REFERENCE.md) |
+| `getShort(offset)` / `setShort(offset, val)` | Direct off-heap 16-bit integer read/write without GC overhead. | [Reference](docs/REFERENCE.md) |
+| `getInt(offset)` / `setInt(offset, val)` | Direct off-heap 32-bit integer read/write without GC overhead. | [Reference](docs/REFERENCE.md) |
+| `getLong(offset)` / `setLong(offset, val)` | Direct off-heap 64-bit integer read/write without GC overhead. | [Reference](docs/REFERENCE.md) |
+| `getFloat(offset)` / `setFloat(offset, val)` | Direct off-heap 32-bit floating-point read/write. | [Reference](docs/REFERENCE.md) |
+| `getDouble(offset)` / `setDouble(offset, val)` | Direct off-heap 64-bit floating-point read/write. | [Reference](docs/REFERENCE.md) |
 
-### Primitive Operations
-- `getByte(long offset)` / `setByte(long offset, byte value)`
-- `getInt(long offset)` / `setInt(long offset, int value)`
 ---
 
 ## Installation
