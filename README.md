@@ -179,16 +179,10 @@ Download the latest JARs directly to add them to your classpath:
 
 ## Technical Demos & Benchmarks
 
-See the `examples/` directory for interactive technical implementations and official JMH benchmarks:
-
-| Benchmark Case | Description | Java Example | JMH Benchmark | Launcher |
-|---|---|---|---|---|
-| **Pointer Arithmetic** | Zero-allocation address arithmetic (`address + offset`) vs Java Heap wrappers | [Demo.java](examples/Demo.java) | [Benchmark.java](examples/Benchmark/src/main/java/fastpointer/benchmark/Benchmark.java) | `run-demo.bat` / `run-benchmark.bat` |
-
-### Run JMH Benchmarks via Script
-```cmd
-run-benchmark.bat
-```
+| Case | Java Example | Launcher | Description |
+|---|---|---|---|
+| **Zero-Allocation Pointer Arithmetic** | [Demo.java](examples/Demo.java) | `run-demo.bat` | High-speed native address arithmetic (`address + offset`) and primitive direct memory reads without JVM heap wrappers. |
+| **JMH Microbenchmark Suite** | [Benchmark.java](examples/Benchmark/src/main/java/fastpointer/benchmark/Benchmark.java) | `run-benchmark.bat` | OpenJDK JMH throughput & latency test suite for raw address calculation and primitive dereferencing. |
 
 ---
 
