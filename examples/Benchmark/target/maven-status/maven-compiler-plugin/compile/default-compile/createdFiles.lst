@@ -1,2 +1,9 @@
-META-INF\CompilerHints
+fastpointer\benchmark\jmh_generated\Benchmark_jmhType_B1.class
+fastpointer\benchmark\jmh_generated\Benchmark_testPrimitiveAddressRead_jmhTest.class
+fastpointer\benchmark\jmh_generated\Benchmark_jmhType_B3.class
 META-INF\BenchmarkList
+fastpointer\benchmark\jmh_generated\Benchmark_testPointerOffsetArithmetic_jmhTest.class
+META-INF\CompilerHints
+fastpointer\benchmark\jmh_generated\Benchmark_jmhType.class
+fastpointer\benchmark\Benchmark.class
+fastpointer\benchmark\jmh_generated\Benchmark_jmhType_B2.class

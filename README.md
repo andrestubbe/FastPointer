@@ -49,6 +49,7 @@ public class Demo {
 - [API Quick Reference](#api-quick-reference)
 - [FastJava Native Memory Substrate](#fastjava-native-memory--hardware-substrate)
 - [Installation](#installation)
+- [Technical Demos & Benchmarks](#technical-demos--benchmarks)
 - [Documentation](#documentation)
 - [Platform Support](#platform-support)
 - [License](#license)
@@ -176,13 +177,13 @@ Download the latest JARs directly to add them to your classpath:
 
 ---
 
-## Technical Examples & Benchmarks
+## Technical Demos & Benchmarks
 
 See the `examples/` directory for interactive technical implementations and official JMH benchmarks:
 
-| Benchmark Case | Description | Java Example | JMH Benchmark |
-|---|---|---|---|
-| **Pointer Arithmetic** | Zero-allocation address arithmetic (`address + offset`) vs Java Heap wrappers | [Demo.java](examples/Demo.java) | [JMH_Pointer.java](examples/src/main/java/fastpointer/benchmark/JMH_Pointer.java) |
+| Benchmark Case | Description | Java Example | JMH Benchmark | Launcher |
+|---|---|---|---|---|
+| **Pointer Arithmetic** | Zero-allocation address arithmetic (`address + offset`) vs Java Heap wrappers | [Demo.java](examples/Demo.java) | [Benchmark.java](examples/Benchmark/src/main/java/fastpointer/benchmark/Benchmark.java) | `run-demo.bat` / `run-benchmark.bat` |
 
 ### Run JMH Benchmarks via Script
 ```cmd

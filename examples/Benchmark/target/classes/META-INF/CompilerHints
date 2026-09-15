@@ -3,6 +3,6 @@ dontinline,*.*_avgt_jmhStub
 dontinline,*.*_sample_jmhStub
 dontinline,*.*_ss_jmhStub
 dontinline,*.*_thrpt_jmhStub
-inline,fastpointer/benchmark/JMH_Pointer.setup
-inline,fastpointer/benchmark/JMH_Pointer.testPointerOffsetArithmetic
-inline,fastpointer/benchmark/JMH_Pointer.testPrimitiveAddressRead
+inline,fastpointer/benchmark/Benchmark.setup
+inline,fastpointer/benchmark/Benchmark.testPointerOffsetArithmetic
+inline,fastpointer/benchmark/Benchmark.testPrimitiveAddressRead

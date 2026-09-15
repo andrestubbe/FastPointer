@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 @Fork(1)
 @Warmup(iterations = 2, time = 1)
 @Measurement(iterations = 3, time = 1)
-public class JMH_Pointer {
+public class Benchmark {
 
     private Pointer ptr;
 
@@ -19,12 +19,12 @@ public class JMH_Pointer {
         ptr = Pointer.of(0x7FFF0000L);
     }
 
-    @Benchmark
+    @org.openjdk.jmh.annotations.Benchmark
     public Pointer testPointerOffsetArithmetic() {
         return ptr.add(64).add(-16);
     }
 
-    @Benchmark
+    @org.openjdk.jmh.annotations.Benchmark
     public long testPrimitiveAddressRead() {
         return ptr.address();
     }
