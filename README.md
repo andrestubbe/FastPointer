@@ -63,6 +63,17 @@ Standard Java interop mechanisms (`sun.misc.Unsafe` or Java 22 `Foreign Function
 - **Microsecond JNI Bridge** — Eliminate object wrapper allocations when passing C++ handles, DirectX/Vulkan pointers, and OS memory buffers between Java and native DLLs.
 - **C++ Pointer Performance in Java** — Achieve raw native execution speed (48+ Million ops/sec) for real-time graphics, automation bots, and high-frequency trading.
 
+FastPointer bridges Java to hardware memory addresses with C++-like pointer ergonomics:
+
+| Feature | Java `sun.misc.Unsafe` | Java 22 FFM (`MemorySegment`) | FastPointer |
+|:---|:---|:---|:---|
+| **API Usability** | Raw JVM internal boilerplate | Complex Scoped Arenas | **Intuitive Fluent Pointer API** |
+| **Throughput (Dereference)**| ~45M ops/sec | ~35–45M ops/sec | **> 48.2 Million ops/sec** |
+| **Object Wrapper Churn** | None (Raw long) | High (Segment/Scope objects) | **Zero GC (Primitive 64-bit Address)** |
+| **JDK Compatibility** | Deprecated / Blocked | Requires Java 22+ preview | **Java 17+ LTS Compatible** |
+| **Struct / Handle Casting** | Manual byte offsets | Complex MemoryLayout | **Direct Typed Primitives (`getInt`, etc.)** |
+| **Dependencies** | JVM internal | Preview foreign module | **Pure Java 17+ backed by FastCore** |
+
 ---
 
 ## Key Features
